@@ -1,0 +1,100 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\GET Academy\\Desktop\\Etter sommeren\\OceanAquarium\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F3C46197-1BFC-4F95-B181-FF03AE38AAAC}|OceanAquarium\\OceanAquarium.csproj|c:\\users\\get academy\\desktop\\etter sommeren\\oceanaquarium\\oceanaquarium\\cod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3C46197-1BFC-4F95-B181-FF03AE38AAAC}|OceanAquarium\\OceanAquarium.csproj|solutionrelative:oceanaquarium\\cod.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3C46197-1BFC-4F95-B181-FF03AE38AAAC}|OceanAquarium\\OceanAquarium.csproj|c:\\users\\get academy\\desktop\\etter sommeren\\oceanaquarium\\oceanaquarium\\ifish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3C46197-1BFC-4F95-B181-FF03AE38AAAC}|OceanAquarium\\OceanAquarium.csproj|solutionrelative:oceanaquarium\\ifish.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3C46197-1BFC-4F95-B181-FF03AE38AAAC}|OceanAquarium\\OceanAquarium.csproj|c:\\users\\get academy\\desktop\\etter sommeren\\oceanaquarium\\oceanaquarium\\mackerel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3C46197-1BFC-4F95-B181-FF03AE38AAAC}|OceanAquarium\\OceanAquarium.csproj|solutionrelative:oceanaquarium\\mackerel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F3C46197-1BFC-4F95-B181-FF03AE38AAAC}|OceanAquarium\\OceanAquarium.csproj|c:\\users\\get academy\\desktop\\etter sommeren\\oceanaquarium\\oceanaquarium\\seatrout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F3C46197-1BFC-4F95-B181-FF03AE38AAAC}|OceanAquarium\\OceanAquarium.csproj|solutionrelative:oceanaquarium\\seatrout.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "IFish.cs",
+              "DocumentMoniker": "C:\\Users\\GET Academy\\Desktop\\Etter sommeren\\OceanAquarium\\OceanAquarium\\IFish.cs",
+              "RelativeDocumentMoniker": "OceanAquarium\\IFish.cs",
+              "ToolTip": "C:\\Users\\GET Academy\\Desktop\\Etter sommeren\\OceanAquarium\\OceanAquarium\\IFish.cs",
+              "RelativeToolTip": "OceanAquarium\\IFish.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T10:34:07.56Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Mackerel.cs",
+              "DocumentMoniker": "C:\\Users\\GET Academy\\Desktop\\Etter sommeren\\OceanAquarium\\OceanAquarium\\Mackerel.cs",
+              "RelativeDocumentMoniker": "OceanAquarium\\Mackerel.cs",
+              "ToolTip": "C:\\Users\\GET Academy\\Desktop\\Etter sommeren\\OceanAquarium\\OceanAquarium\\Mackerel.cs",
+              "RelativeToolTip": "OceanAquarium\\Mackerel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T09:14:17.822Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cod.cs",
+              "DocumentMoniker": "C:\\Users\\GET Academy\\Desktop\\Etter sommeren\\OceanAquarium\\OceanAquarium\\Cod.cs",
+              "RelativeDocumentMoniker": "OceanAquarium\\Cod.cs",
+              "ToolTip": "C:\\Users\\GET Academy\\Desktop\\Etter sommeren\\OceanAquarium\\OceanAquarium\\Cod.cs",
+              "RelativeToolTip": "OceanAquarium\\Cod.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAAADEAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T08:05:50.389Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SeaTrout.cs",
+              "DocumentMoniker": "C:\\Users\\GET Academy\\Desktop\\Etter sommeren\\OceanAquarium\\OceanAquarium\\SeaTrout.cs",
+              "RelativeDocumentMoniker": "OceanAquarium\\SeaTrout.cs",
+              "ToolTip": "C:\\Users\\GET Academy\\Desktop\\Etter sommeren\\OceanAquarium\\OceanAquarium\\SeaTrout.cs",
+              "RelativeToolTip": "OceanAquarium\\SeaTrout.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-14T09:16:05.271Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
