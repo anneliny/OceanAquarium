@@ -1,0 +1,4 @@
+﻿
+using OceanAquarium;
+
+new Main();
