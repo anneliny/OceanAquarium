@@ -24,11 +24,6 @@ namespace OceanAquarium
 
         }
 
-        public SeaTrout()
-        {
-            
-        }
-
         public void FeedFish(List<IFish> fish)
         {
             bool inFeed = true;

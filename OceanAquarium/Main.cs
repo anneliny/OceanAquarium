@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel.Design;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Timers;
+﻿using System.Timers;
 
 namespace OceanAquarium
 {
@@ -14,6 +8,7 @@ namespace OceanAquarium
         public Cod Cod { get; set; }
         public Mackerel Mackerel { get; set; }
         public SeaTrout SeaTrout { get; set; }
+        public TimerClass TimerClass { get; set; }
 
         public Main()
         {
@@ -28,13 +23,15 @@ namespace OceanAquarium
 
             };
 
-            Cod = new Cod();
-            Mackerel = new Mackerel();
-            SeaTrout = new SeaTrout();
-
+            Cod = new Cod("Tobias", "Stor");
+            Mackerel = new Mackerel("Martine", "Liten");
+            SeaTrout = new SeaTrout("Ørjan", "Medium");
+            TimerClass = new TimerClass(Cod);
+            Console.SetCursorPosition(0, 3);
             Menu();
-
         }
+
+
 
         public void Menu()
         {
@@ -65,7 +62,6 @@ namespace OceanAquarium
                         break;
                 }
 
-
             }
 
         }
@@ -87,10 +83,6 @@ namespace OceanAquarium
             Console.WriteLine("1. For å mate torsken");
             Console.WriteLine("2. For å mate makrellen");
             Console.WriteLine("3. For å mate sjøørreten");
-
-            //Cod.Countdown();
-            //Mackerel.Countdown(fish); //Trenger jeg å sende inn lista i de ulike metodene? 
-            //SeaTrout.Countdown(fish);
 
 
             bool inFishFeeding = true;

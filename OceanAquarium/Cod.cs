@@ -1,10 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Timers;
+using System.Threading;
 
 namespace OceanAquarium
 {
@@ -15,20 +10,15 @@ namespace OceanAquarium
         public string Size { get; set; }
         public string Type { get; set; }
         public int HungerLevel { get; set; }
-        public int CountdownCod { get; set; }
 
         public Cod(string name, string size)
         {
             Name = name;
             Size = size;
             Type = "Torsk";
-            HungerLevel = 5; //Hvorfor funker det ikke å starte på 5?
-            CountdownCod = 10;
+            HungerLevel = 50; 
         }
-        public Cod()
-        {
-            
-        }
+
 
         public void FeedFish(List<IFish> fish)
         {
@@ -36,10 +26,9 @@ namespace OceanAquarium
 
             while (inFeed)
             {
-                if (HungerLevel <= 10)
+                if (HungerLevel <= 98)
                 {
-                    HungerLevel++;
-                    Console.WriteLine($"Sultnivå torsk{Type}: {HungerLevel}"); //Hvorfor funker ikke type?
+                    HungerLevel += 5;
                 }
                 else
                 {
@@ -50,17 +39,22 @@ namespace OceanAquarium
             }
         }
 
+        public void HungerDecrease(object? state) 
+        {
+            Console.SetCursorPosition(0, 0);
+            if (HungerLevel > 0)
+            {
+                HungerLevel -= 2;
 
-        //public void Countdown()
-        //{
+                Console.WriteLine($"Sultnivå {Type}: {HungerLevel} poeng");
+            }
+            else if (HungerLevel == 0)
+            {
+                Console.WriteLine("Fisken er mett");
 
-        //    if (HungerLevel < 10)
-        //    {
+            }
+        }
 
-        //        Thread.Sleep(1000);
 
-        //        Console.WriteLine($"Sultnivå for torsk: {CountdownCod} sekunder"); //Ikke ferdig, bare prøvd mye forskjellig.
-        //    }
-        //}
     }
 }

@@ -22,11 +22,6 @@ namespace OceanAquarium
             HungerLevel = 0;
         }
 
-        public Mackerel()
-        {
-            
-        }
-
 
         public void FeedFish(List<IFish> fish)
         {
