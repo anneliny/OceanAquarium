@@ -27,7 +27,7 @@ namespace OceanAquarium
             Mackerel = new Mackerel("Martine", "Liten");
             SeaTrout = new SeaTrout("Ørjan", "Medium");
             TimerClass = new TimerClass(Cod);
-            Console.SetCursorPosition(0, 3);
+            
             Menu();
         }
 
@@ -35,10 +35,12 @@ namespace OceanAquarium
 
         public void Menu()
         {
+
             bool inMenu = true;
 
             while (inMenu)
             {
+                Console.SetCursorPosition(0, 3); 
 
                 Console.WriteLine("Velkommen til sjø akvariet!");
                 Console.WriteLine("Hva vil du gjøre?\n");
@@ -50,10 +52,12 @@ namespace OceanAquarium
                 switch (inputMenu)
                 {
                     case "1":
+                        Console.Clear();
                         ShowFish();
                         break;
 
                     case "2":
+                        Console.Clear();
                         FishFeeding();
                         break;
 
@@ -68,21 +72,40 @@ namespace OceanAquarium
 
         public void ShowFish()
         {
-            foreach (IFish fish in fish)
+            bool inShowFish = true;
+            Console.SetCursorPosition(0, 3);
+
+            while (inShowFish)
             {
-                Console.WriteLine($"Navn: {fish.Name}");
-                Console.WriteLine($"Størrelse: {fish.Size}");
-                Console.WriteLine($"Art: {fish.Type}\n");
+
+                foreach (IFish fish in fish)
+                {
+                    Console.WriteLine($"Navn: {fish.Name}");
+                    Console.WriteLine($"Størrelse: {fish.Size}");
+                    Console.WriteLine($"Art: {fish.Type}\n");
+                }
+
+                Console.WriteLine("1. Gå tilbake");
+                var input = Console.ReadLine();
+
+                if (input == "1")
+                {
+                    inShowFish = false;
+                    Console.Clear();
+                }
+
             }
         }
 
         public void FishFeeding()
         {
+            Console.SetCursorPosition(0, 3);
             Console.WriteLine("Fiskene trenger mat, men må mates med ulike ting og mengde.");
             Console.WriteLine("Pass på at de verken blir for sultne eller for mette!");
             Console.WriteLine("1. For å mate torsken");
             Console.WriteLine("2. For å mate makrellen");
             Console.WriteLine("3. For å mate sjøørreten");
+            Console.WriteLine("4. Gå tilbake");
 
 
             bool inFishFeeding = true;
