@@ -19,28 +19,39 @@ namespace OceanAquarium
             Name = name;
             Size = size;
             Type = "Makrell";
-            HungerLevel = 0;
+            HungerLevel = 60;
         }
-
 
         public void FeedFish(List<IFish> fish)
         {
-            bool inFeed = true;
-
-            while (inFeed)
+            if (HungerLevel <= 100 && HungerLevel != 0)
             {
-                if (HungerLevel < 15)
-                {
-                    HungerLevel++;
-                    Console.WriteLine($"Sultnivå makrell{Type}: {HungerLevel}"); //Hvorfor funker ikke type?
-                }
-                else
-                {
-                    Console.WriteLine("Makrellen er mett");
-                    Console.ReadKey();
-                }
-                inFeed = false;
+                HungerLevel += 8;
             }
         }
+
+        public void HungerDecrease()
+        {
+
+            if (HungerLevel > 0 && HungerLevel < 100)
+            {
+                HungerLevel -= 4;
+
+                Console.WriteLine($"Sultnivå {Type}: {(HungerLevel.ToString().Length == 1 ? ("0" + HungerLevel) : HungerLevel)} poeng"); //???
+            }
+            else if (HungerLevel <= 0)
+            {
+                Main.ClearLine();
+
+                Console.WriteLine("Fisken sultet ihjel");
+            }
+            else if (HungerLevel >= 100)
+            {
+                Main.ClearLine();
+
+                Console.WriteLine("Du matet fisken så mye at den sprakk.");
+            }
+        }
+
     }
 }

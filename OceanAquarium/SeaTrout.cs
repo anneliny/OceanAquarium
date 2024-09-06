@@ -34,6 +34,7 @@ namespace OceanAquarium
 
         public void HungerDecrease()
         {
+
             if (HungerLevel > 0 && HungerLevel < 110)
             {
                 HungerLevel -= 5;

@@ -25,14 +25,14 @@ namespace OceanAquarium
     
                 if (HungerLevel <= 98 && HungerLevel != 0)
                 {
-                    HungerLevel += 6;
+                    HungerLevel += 6; //Når jeg mater fisken for fort, så skriver jeg over flere linjer under??
                 }
         }
 
         public void HungerDecrease() 
         {
 
-            if (HungerLevel > 0)
+            if (HungerLevel > 0 && HungerLevel < 102)
             {
                 HungerLevel -= 2;
 

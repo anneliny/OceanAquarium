@@ -26,7 +26,7 @@ namespace OceanAquarium
             Cod = new Cod("Tobias", "Stor");
             Mackerel = new Mackerel("Martine", "Liten");
             SeaTrout = new SeaTrout("Ørjan", "Medium");
-            TimerClass = new TimerClass(Cod, SeaTrout);
+            TimerClass = new TimerClass(Cod, SeaTrout, Mackerel);
             
             Menu();
         }
@@ -38,7 +38,7 @@ namespace OceanAquarium
 
             while (inMenu)
             {
-                Console.SetCursorPosition(0, 3); 
+                Console.SetCursorPosition(0, 5); 
 
                 Console.WriteLine("Velkommen til sjø akvariet!");
                 Console.WriteLine("Hva vil du gjøre?\n");
@@ -69,7 +69,7 @@ namespace OceanAquarium
         public void ShowFish()
         {
             bool inShowFish = true;
-            Console.SetCursorPosition(0, 3);
+            Console.SetCursorPosition(0, 5);
 
             while (inShowFish)
             {
@@ -95,7 +95,7 @@ namespace OceanAquarium
 
         public void FishFeeding()
         {
-            Console.SetCursorPosition(0, 3);
+            Console.SetCursorPosition(0, 5);
             Console.WriteLine("Fiskene trenger mat, men må mates med ulike ting og mengde.");
             Console.WriteLine("Pass på at de verken blir for sultne eller for mette!");
             Console.WriteLine("1. For å mate torsken");
