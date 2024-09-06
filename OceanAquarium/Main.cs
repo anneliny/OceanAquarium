@@ -26,12 +26,10 @@ namespace OceanAquarium
             Cod = new Cod("Tobias", "Stor");
             Mackerel = new Mackerel("Martine", "Liten");
             SeaTrout = new SeaTrout("Ørjan", "Medium");
-            TimerClass = new TimerClass(Cod);
+            TimerClass = new TimerClass(Cod, SeaTrout);
             
             Menu();
         }
-
-
 
         public void Menu()
         {
@@ -65,9 +63,7 @@ namespace OceanAquarium
                         System.Environment.Exit(0);
                         break;
                 }
-
             }
-
         }
 
         public void ShowFish()
@@ -134,7 +130,13 @@ namespace OceanAquarium
                         break;
                 }
             }
-
+        }
+        public static void ClearLine()
+        {
+            int currentLine = Console.CursorTop;
+            Console.SetCursorPosition(0, Console.CursorTop);
+            Console.WriteLine(new string(' ', Console.WindowWidth));
+            Console.SetCursorPosition(0, currentLine);
 
         }
     }

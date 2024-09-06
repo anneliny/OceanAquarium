@@ -8,15 +8,27 @@ namespace OceanAquarium
 {
     internal class TimerClass
     {
-        public System.Threading.Timer timer { get; set; }
+        public Timer Timer { get; set; }
         public Cod Cod { get; set; }
+        public SeaTrout SeaTrout { get; set; }
 
-        public TimerClass(Cod cod)
+        public TimerClass(Cod cod, SeaTrout seaTrout)
         {
             Cod = cod;
-            
-            timer = new System.Threading.Timer(Cod.HungerDecrease, null, 1000, 1000);
+            SeaTrout = seaTrout;
+
+            Timer = new Timer(GetHungerDecrease, null, 10, 1000);
         }
+
+        public void GetHungerDecrease(object? state)
+        {
+            Console.SetCursorPosition(0, 0);
+            Cod.HungerDecrease();
+
+            Console.SetCursorPosition(0, 1);
+            SeaTrout.HungerDecrease();
+        }
+
         
 
     }

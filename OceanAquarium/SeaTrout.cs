@@ -13,6 +13,7 @@ namespace OceanAquarium
         public string Size { get; set; }
         public string Type{ get; set; }
         public int HungerLevel { get; set; }
+        public TimerClass Timer {  get; set; }
 
 
         public SeaTrout(string name, string size)
@@ -20,27 +21,36 @@ namespace OceanAquarium
             Name = name;
             Size = size;
             Type = "Sjø ørret";
-            HungerLevel = 0;
-
+            HungerLevel = 40;
         }
 
         public void FeedFish(List<IFish> fish)
         {
-            bool inFeed = true;
+                if (HungerLevel <= 100 && HungerLevel != 0)
+                {
+                    HungerLevel += 10;
+                }
+        }
 
-            while (inFeed)
+        public void HungerDecrease()
+        {
+            if (HungerLevel > 0 && HungerLevel < 110)
             {
-                if (HungerLevel < 12)
-                {
-                    HungerLevel++;
-                    Console.WriteLine($"Sultnivå sjø ørett{Type}: {HungerLevel}"); //Hvorfor funker ikke type?
-                }
-                else
-                {
-                    Console.WriteLine("Sjø øretten er mett");
-                    Console.ReadKey();
-                }
-                inFeed = false;
+                HungerLevel -= 5;
+
+                Console.WriteLine($"Sultnivå {Type}: {(HungerLevel.ToString().Length == 1 ? ("0" + HungerLevel) : HungerLevel)} poeng"); //???
+            }
+            else if (HungerLevel <= 0)
+            {
+                Main.ClearLine();
+
+                Console.WriteLine("Fisken sultet ihjel");
+            }
+            else if (HungerLevel >= 100)
+            {
+                Main.ClearLine();
+
+                Console.WriteLine("Du matet fisken så mye at den sprakk.");
             }
         }
     }
