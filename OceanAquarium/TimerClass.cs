@@ -19,7 +19,7 @@ namespace OceanAquarium
             SeaTrout = seaTrout;
             Mackerel = mackerel;
 
-            Timer = new Timer(GetHungerDecrease, null, 10, 1000);
+            Timer = new Timer(GetHungerDecrease, null, 1000, 1000);
         }
 
         public void GetHungerDecrease(object? state)

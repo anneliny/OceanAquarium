@@ -49,7 +49,7 @@ namespace OceanAquarium
             {
                 Main.ClearLine();
 
-                Console.WriteLine($"Du matet fisken så mye at den sprakk.");
+                Console.WriteLine("Du matet fisken så mye at den sprakk.");
             }
 
         }
